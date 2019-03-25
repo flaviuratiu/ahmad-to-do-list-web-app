@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<h1>To Do Items</h1>
+
+<table id="items">
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th>Deadline</th>
+        <th>Done</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="description">Learn HTML</td>
+        <td class="deadline">04/01/2019</td>
+        <td><input type="checkbox" title="Done" class="mark-done"></td>
+    </tr>
+    <tr>
+        <td class="description">Learn CSS</td>
+        <td class="deadline">04/01/2019</td>
+        <td><input type="checkbox" title="Done" class="mark-done"></td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Add new item</h3>
+<form id="create-item">
+    <input type="text" id="description-input" title="Description" placeholder="Description" name="description"/>
+    <input type="date" id="deadline-input" title="Deadline" name="deadline"/>
+    <input type="button" id="save-item" title="Save" value="Save"/>
+</form>
+
+</body>
+</html>
